@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Use our free and instant calculator to find how many days are between any two dates. Fast, accurate and no signup required." />
+  <meta property="og:title" content="How Many Days Between Two Dates?" />
+  <meta property="og:description" content="Free date calculator: find how many days are between any two dates instantly." />
+  <meta property="og:url" content="https://howmanydaysbetweentwodates.com" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://howmanydaysbetweentwodates.com/preview.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="How Many Days Between Two Dates?" />
+  <meta name="twitter:description" content="Use our free date calculator to know the number of days between two dates." />
+  <meta name="twitter:image" content="https://howmanydaysbetweentwodates.com/preview.jpg" />
+  <title>How Many Days Between Two Dates? | Free & Instant Date Calculator</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "How Many Days Between Two Dates",
+  "url": "https://howmanydaysbetweentwodates.com",
+  "inLanguage": "en",
+  "description": "This site allows you to calculate the number of days between two dates.",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://howmanydaysbetweentwodates.com/?q={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+}
+
+  </script>
+</head>
+<body>
+  <div class="page-wrapper">
+    <header>
+      <h1>How Many Days Between Two Dates</h1>
+      <nav>
+        <a href="about.html">About Us</a>
+        <a href="privacy.html">Privacy Policy</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="calculator">
+        <label for="start-date">Start Date:</label>
+        <input type="date" id="start-date" />
+
+        <label for="end-date">End Date:</label>
+        <input type="date" id="end-date" />
+
+        <div class="options">
+          <label>
+            <input type="checkbox" id="include-end" />
+            Include end day in calculation
+          </label>
+          <label>
+            <input type="checkbox" id="business-days" />
+            Calculate business days only <span class="note">(Mon–Fri)</span>
+          </label>
+        </div>
+
+        <button onclick="calculateDays()">Calculate</button>
+      </section>
+
+      <!-- RESULT is OUTSIDE the calculator section -->
+     
+    </main>
+     <p id="result"></p>
+
+    <footer>
+      <p>&copy; 2025 howmanydaysbetweentwodates.com - All rights reserved.</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

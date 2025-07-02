@@ -1,0 +1,167 @@
+/* Global & layout */
+html, body {
+  margin: 0;
+  padding: 0;
+  background: #f7f9fc;
+  color: #333;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+  height: 100%;
+}
+
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Header */
+header {
+  background-color: #2b3a42;
+  color: white;
+  text-align: center;
+  padding: 1em;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.4em;
+}
+
+nav {
+  margin-top: 0.5em;
+}
+
+nav a {
+  color: #ffffff;
+  margin: 0 1em;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Main */
+main {
+  flex: 1;
+  padding: 2em 2em;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.calculator {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  padding: 2em;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.calculator label {
+  display: block;
+  margin-top: 0.5em;
+  font-weight: 500;
+}
+
+.calculator input[type="date"] {
+  width: 100%;
+  padding: 0.5em;
+  margin-top: 0.25em;
+  font-size: 1em;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.options {
+  margin-top: 1em;
+}
+
+.options label {
+  display: block;
+  margin-top: 0.5em;
+  font-size: 0.95em;
+}
+
+.options .note {
+  font-size: 0.85em;
+  color: #666;
+  margin-left: 0.25em;
+}
+
+button {
+  margin-top: 1em;
+  padding: 0.75em 1.5em;
+  font-size: 1em;
+  background-color: #2b3a42;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  align-self: flex-start;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #1d272d;
+}
+
+/* Result */
+#result {
+  margin-top: 2em;
+  margin-bottom: 15em;
+  font-size: 0.9em;
+  font-weight: bold;
+  text-align: center;
+  word-break: break-word;
+}
+
+/* Footer */
+footer {
+  background: #f7f9fc;
+  text-align: center;
+  padding: 1em;
+  font-size: 0.7em;
+  color: #2b3a42;
+}
+
+/* About & Privacy text justification */
+main section p {
+  text-align: justify;
+}
+
+/* Responsive breakpoints */
+@media (max-width: 767px) {
+  header h1 {
+    font-size: 1.2em;
+  }
+
+  .calculator {
+    padding: 1.5em;
+    max-width: 95%;
+  }
+
+  button {
+    width: 100%;
+    align-self: stretch;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .calculator {
+    max-width: 600px;
+    padding: 2.5em;
+  }
+}
+
+@media (min-width: 1025px) {
+  .calculator {
+    max-width: 500px;
+  }
+}
